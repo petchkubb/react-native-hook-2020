@@ -3,9 +3,10 @@ import { View, Text } from 'react-native'
 import { NavigationContainer } from '@react-navigation/native'
 import { createStackNavigator } from '@react-navigation/stack'
 
-import HomeScreen from './pages/Home'
-import ListScreen from './pages/List'
-import Component from './pages/Components'
+import HomeScreen from './src/pages/Home'
+import ListScreen from './src/pages/List'
+import Component from './src/pages/Components'
+import ImageScreen from './src/pages/Image'
 
 const Stack = createStackNavigator()
 function App() {
@@ -26,6 +27,11 @@ function App() {
 					name="Component"
 					component={Component}
 					options={{ title: 'Component' }}
+				/>
+				<Stack.Screen
+					name="Image"
+					component={ImageScreen}
+					options={{ title: 'ImageScreen' }}
 				/>
 			</Stack.Navigator>
 		</NavigationContainer>
