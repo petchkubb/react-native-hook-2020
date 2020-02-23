@@ -7,6 +7,9 @@ import HomeScreen from './src/pages/Home'
 import ListScreen from './src/pages/List'
 import Component from './src/pages/Components'
 import ImageScreen from './src/pages/Image'
+import CounterScreen from './src/pages/Counter'
+import ColorScreen from './src/pages/ColorScreen'
+import SquareScreen from './src/pages/SquareScreen'
 
 const Stack = createStackNavigator()
 function App() {
@@ -32,6 +35,21 @@ function App() {
 					name="Image"
 					component={ImageScreen}
 					options={{ title: 'ImageScreen' }}
+				/>
+				<Stack.Screen
+					name="Counter"
+					component={CounterScreen}
+					options={{ title: 'CounterScreen' }}
+				/>
+				<Stack.Screen
+					name="Color"
+					component={ColorScreen}
+					options={{ title: 'ColorScreen' }}
+				/>
+				<Stack.Screen
+					name="Square"
+					component={SquareScreen}
+					options={{ title: 'SquareScreen' }}
 				/>
 			</Stack.Navigator>
 		</NavigationContainer>
