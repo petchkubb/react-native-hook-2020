@@ -11,6 +11,7 @@ import CounterScreen from './src/pages/Counter'
 import ColorScreen from './src/pages/ColorScreen'
 import SquareScreen from './src/pages/SquareScreen'
 import TextScreen from './src/pages/TextScreen'
+import BoxScreen from './src/pages/BoxScreen'
 
 const Stack = createStackNavigator()
 function App() {
@@ -56,6 +57,11 @@ function App() {
 					name="Text"
 					component={TextScreen}
 					options={{ title: 'TextScreen' }}
+				/>
+				<Stack.Screen
+					name="Box"
+					component={BoxScreen}
+					options={{ title: 'BoxScreen' }}
 				/>
 			</Stack.Navigator>
 		</NavigationContainer>
